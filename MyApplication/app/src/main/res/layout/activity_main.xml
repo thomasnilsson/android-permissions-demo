@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <Switch
+            android:id="@+id/switchLocation"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:checked="false"
+            android:onClick="askForLocation"
+            android:text="Geolocation"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+
+        <Switch
+            android:id="@+id/switchActivity"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:checked="false"
+            android:onClick="askForActivity"
+            android:text="Activity Recognition"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+
+        <Switch
+            android:id="@+id/switchNotifications"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:checked="false"
+            android:onClick="askForNotifications"
+            android:text="Notifications"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+
+        <Switch
+            android:id="@+id/switchAppUsage"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:checked="false"
+            android:onClick="askForAppUsageStats"
+            android:text="App Usage"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
